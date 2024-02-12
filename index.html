@@ -60,10 +60,60 @@
             <div class="card card-compact w-auto bg-base-100 shadow-xl">
                 <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p>Area (A) = b    x   h</p>
+                  <div>
+                    <!-- base  -->
+                    <input class="w-20 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-base" placeholder="base">
+                    <span>cm</span>
+                    <!-- hight  -->
+                    <input class="w-20 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-hight" placeholder="hight">
+                    <span>cm</span>
+                  </div>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">calculate</button>
+                  </div>
+                </div>
+              </div>
+<!-- pentagon  -->
+            <div class="card card-compact w-auto bg-base-100 shadow-xl">
+                <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">pentagon</h2>
+                  <p>Area (A) = 0.5 X p X b</p>
+                  <div class="flex gap-5">
+                    <!-- perimeter-->
+                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter" placeholder="peri">
+                   
+                    <!-- apothem -->
+                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem" placeholder="apo">
+                  </div>
+                  <div>
+                    <p class="text-2xl">Area: <span id="pentagon-area">0</span><span>cm</span></p>
+                  </div>
+                  <div class="card-actions justify-end">
+                    <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">calculate</button>
+                  </div>
+                </div>
+              </div>
+              <!-- ellipse -->
+            <div class="card card-compact w-auto bg-base-100 shadow-xl">
+                <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">ellipse</h2>
+                  <p>Area (A) = π X a X b</p>
+                  <div class="flex gap-5">
+                    <!-- major radius-->
+                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-major-radius" placeholder="peri">
+                   
+                    <!-- minor radius -->
+                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-minor-radius" placeholder="apo">
+                  </div>
+                  <div>
+                    <p class="text-2xl">Area: <span id="ellipse-area">0</span><span>cm</span></p>
+                  </div>
+                  <div class="card-actions justify-end">
+                    <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">calculate</button>
                   </div>
                 </div>
               </div>
@@ -80,5 +130,9 @@
 </main>
 <script src="scripts/triangle.js"></script>
 <script src="scripts/rectangle.js"></script>
+<script src="scripts/parallelogram.js"></script>
+<script src="scripts/pentagon.js"></script>
+<script src="scripts/../ellipse.js"></script>
+<script src="scripts/./practic.js"></script>
 </body>
 </html>
